@@ -144,7 +144,7 @@ html {
     margin-top: 46px;
     /* padding-top 50% tỉ lệ chiều ngang của chính nó */
     padding-top: 50%;
-    background: url('/assests/img/slider/slider1.jpg') no-repeat;
+    background: url("https://www.w3schools.com/w3images/la.jpg") no-repeat;
     background-size: cover;
     background-position: top center;
     position: relative;

@@ -351,6 +351,8 @@ html {
 
 .contact-infor {      
     font-size: 18px;
+    margin-bottom: 16px;
+    padding: 0;
 }
 
 .contact-infor i {

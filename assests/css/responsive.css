@@ -1,8 +1,5 @@
 /* Mobile */
 @media (max-width: 740px) {
-    #nav > li {
-        display: block;
-    }
 
     #header {
         overflow: hidden;
@@ -14,5 +11,30 @@
 
     #header .mobile-menu-btn {
         display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 3px 41px;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
     }
 }

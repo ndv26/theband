@@ -142,6 +142,11 @@ html {
     padding: 0 24px;
 }
 
+#header .search-button:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
 .mobile-menu-btn {
     display: none;
 }
@@ -152,12 +157,6 @@ html {
 
 .mobile-menu-btn:hover i {
     color: #000;
-}
-
-
-#header .search-button:hover {
-    cursor: pointer;
-    background-color: #f44336;
 }
 
 /* slider CSS */

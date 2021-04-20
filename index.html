@@ -30,9 +30,13 @@
                     </ul>
                 </li>
             </ul>
+
+            <!-- search button  -->
             <div class="search-button">
                 <i class="search-icon ti-search"></i>
             </div>
+
+            <!-- mobile menu button -->
             <div id="mobile-menu" class="mobile-menu-btn">
                 <i class="ti-menu"></i>
             </div>
@@ -206,11 +210,16 @@
 
         // Tự động đóng khi chọn menu
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-        console.log(menuItems);
         for (var i = 0; i < menuItems.length; i++) {
             var menuItem = menuItems[i];
-            menuItem.onclick = function() {
-                header.style.height = null;
+
+            menuItem.onclick = function(event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isParentMenu) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
             }
         }
     </script>

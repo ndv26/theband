@@ -10,6 +10,12 @@
 3. Màu sắc
 4. Kiểu dáng (kiểu chữ, tròn, vuông) 
 */
+
+/* Responsive
+PC : 1024px <= width
+Tablet: 740px <= width < 1024px
+Mobile: width < 740px
+*/
 /* Reset CSS */
 * {
     margin: 0;
@@ -128,6 +134,7 @@ html {
     font-size: 11px;
 }
 
+#header .mobile-menu-btn,
 #header .search-button {
     float: right;
     color: white;
@@ -135,7 +142,21 @@ html {
     padding: 0 24px;
 }
 
+.mobile-menu-btn {
+    display: none;
+}
+
+.mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+.mobile-menu-btn:hover i {
+    color: #000;
+}
+
+
 #header .search-button:hover {
+    cursor: pointer;
     background-color: #f44336;
 }
 
@@ -175,10 +196,13 @@ html {
 }
 
 #content .content-section {
-    padding: 64px 0px;
-    max-width: 800px;
+    padding: 64px 0;
+    width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 /* CSS About section */
@@ -214,8 +238,12 @@ html {
     text-align: center;
 }
 
+.content-member .band-member {
+    padding: 0;
+}
+
 .content-member .band-member p {    
-    padding: 15px 0;
+    margin: 15px 0;
     font-size: 15px;
 }
 

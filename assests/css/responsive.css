@@ -4,6 +4,10 @@
         width: 100% !important;
     }
 
+    .mb-8 {
+        margin-bottom: 8px !important;
+    }
+
     #header {
         overflow: hidden;
     }
@@ -45,4 +49,11 @@
         display: none;
     }
 
+    .place-buy-button, .submit-btn {    
+        width: 100%;
+    }
+
+    .place-buy-button {
+        text-align: center;
+    }
 }

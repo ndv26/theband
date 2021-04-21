@@ -378,7 +378,7 @@ html {
 
 .submit-btn:hover {
     cursor: pointer;
-    border: none;
+    border: 1px solid #ccc;
     background-color: #ccc;
     color: #000;
 }

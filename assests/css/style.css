@@ -164,7 +164,7 @@ html {
     margin-top: 46px;
     /* padding-top 50% tỉ lệ chiều ngang của chính nó */
     padding-top: 50%;
-    background: url("https://www.w3schools.com/w3images/la.jpg") no-repeat;
+    background: url('../img/slider/slider1.jpg') no-repeat;
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -187,6 +187,7 @@ html {
 #slider .text-slider .text-discription {
     font-size: 15px;
     font-weight: bolder;
+    text-shadow: 0 0 1px #000;
 }
 
 /* Content CSS */
@@ -353,6 +354,7 @@ html {
     font-size: 18px;
     margin-bottom: 16px;
     padding: 0;
+
 }
 
 .contact-infor i {
